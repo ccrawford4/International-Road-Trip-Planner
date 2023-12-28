@@ -18,7 +18,7 @@ Dijkstra's algorithm to find the most efficient travel path.
 ### Installation and Running the Program
 1. Clone the repository to your local machine.
 ```bash
-git clone https://github.com/ccrawford4/International-Road-Trip-Planner.git
+$ git clone https://github.com/ccrawford4/International-Road-Trip-Planner.git
 ```
 2. Open the project in your IDE or navigate to the project directory in your command line tool.
 3. To compile the program, run:
