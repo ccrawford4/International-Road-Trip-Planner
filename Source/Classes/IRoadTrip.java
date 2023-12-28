@@ -369,10 +369,12 @@ public class IRoadTrip {
         while (true) {
             Node source = getNodeFromInput("first");
             if (source == null) {
+                System.out.println("Goodbye!");
                 return;
             }
             Node destination = getNodeFromInput("second");
             if (destination == null) {
+                System.out.println("Goodbye!");
                 return;
             }
             if (graph.findPath(source, destination).size() > 0) {
