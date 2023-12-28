@@ -3,8 +3,7 @@ import Source.Classes.IRoadTrip;
 import org.junit.*;
 
 public class ValidDistanceTest {
-    private final String[] args = {"borders.txt", "capdist.csv", "state_name.tsv"};
-    private final IRoadTrip roadTrip = new IRoadTrip(args);
+    private final IRoadTrip roadTrip = new IRoadTrip();
     @Test
     public void validDistanceOne() {
         int distance = roadTrip.getDistance("USA", "Mexico");

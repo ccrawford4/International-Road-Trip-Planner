@@ -2,8 +2,7 @@ package Source.Tests;
 import org.junit.*;
 import Source.Classes.IRoadTrip;
 public class InvalidDistanceTest {
-    private final String[] args = {"borders.txt", "capdist.csv", "state_name.tsv"};
-    private final IRoadTrip roadTrip = new IRoadTrip(args);
+    private final IRoadTrip roadTrip = new IRoadTrip();
     @Test
     public void invalidTestOne() {
         int distance = roadTrip.getDistance("Canada", "Mexico");

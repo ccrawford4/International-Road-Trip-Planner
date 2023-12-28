@@ -6,8 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FindPathTest {
-    private final String[] args = {"borders.txt", "capdist.csv", "state_name.tsv"};
-    private final IRoadTrip roadTrip = new IRoadTrip(args);
+    private final IRoadTrip roadTrip = new IRoadTrip();
     @Test
     public void testOne() {
         List<String> path = roadTrip.findPath("CS245", "Yemen");

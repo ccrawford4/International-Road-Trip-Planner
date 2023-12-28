@@ -16,17 +16,13 @@ public class IRoadTrip {
 
     /**
      * IRoadTrip constructor
-     * @param args - An array of string arguments representing the fileNames
      */
-    public IRoadTrip (String [] args) {
-        if (args.length < 3) {
-            System.err.println("ERROR! Not enough command line arguments.");
-        }
+    public IRoadTrip () {
         try {
             String basePath = "./Resources/";
-            File borderFile = new File(basePath + args[0]);
-            File capDistFile = new File(basePath + args[1]);
-            File stateNameFile = new File(basePath + args[2]);
+            File borderFile = new File("./Resources/borders.txt");
+            File capDistFile = new File("./Resources/capdist.csv");
+            File stateNameFile = new File("./Resources/state_name.tsv");
 
             this.edgeCases = new EdgeCases();
             this.nameMap = new HashMap<>();
@@ -393,8 +389,7 @@ public class IRoadTrip {
      * @param args - command line arguments
      */
     public static void main(String[] args) {
-        IRoadTrip a3 = new IRoadTrip(args);
-        List<String> path = a3.findPath("trinidad", "Trinidad and Tobago");
+        IRoadTrip a3 = new IRoadTrip();
         a3.acceptUserInput();
     }
 }
