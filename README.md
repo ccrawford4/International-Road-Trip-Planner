@@ -68,10 +68,21 @@ The primary algorithm driving the application is Dijkstra's algorithm, renowned 
 
 This blend of data structures and algorithms ensures that the International Road Trip Planner not only provides accurate results but also does so with optimal efficiency and speed.
 
+## Core Functions
 
-## Functions
-1. **Function One**:
-2. **Function Two**:
+### 1. User Input and Path Display `acceptUserInput()`
+- Finds and displays the shortest path between the given countries, along with the route details.
+- Informs the user if no route exists between the specified locations.
+- Terminates the program if the user inputs indicate a desire to exit.
+
+### 2. Pathfinding Between Two Countries `findPath(String country1, String country2)`
+- A list of country names representing the shortest path, if such a path exists.
+- An empty list, if no path is available or if the input countries are invalid.
+
+### 3. Distance Calculation Between Two Countries `getDistance(String country1, String country2)`
+- The distance between the countries if they are directly connected.
+- `-1` if there is no direct connection between the countries or if either country name is not recognized.
+- `0` if the two country names are identical.
 
 ## Testing
 The project employs JUnit for testing. Here's an overview of how the testing works and instructions on
