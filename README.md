@@ -23,11 +23,11 @@ git clone https://github.com/ccrawford4/International-Road-Trip-Planner.git
 2. Open the project in your IDE or navigate to the project directory in your command line tool.
 3. To compile the program, run:
 ```bash
-$ javac IRoadTrip
+$ javac Source/Classes/IRoadTrip
 ```
 4. To run the program use:
 ```bash
-$ java IRoadTrip
+$ java Source/Classes/IRoadTrip
 ```
 
 ## Usage
