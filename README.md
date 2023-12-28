@@ -49,6 +49,26 @@ The application can be used to plan road trips between countries by calculating 
 #### Error Handling
 ![invalid_route.png](./Images/invalid_route.png)
 
+## Data Structures and Algorithms
+
+### Data Structures
+The International Road Trip Planner utilizes a variety of data structures to efficiently handle
+and process the geographical and political data of various countries.
+
+- **Undirected Weighted Graph with an Adjacency List**: The core structure of the project. It represents the network of countries and their capital cities, with edges weighted by the distance between them.
+- **HashMaps**: Used for storing and quickly accessing the relationship between countries and their corresponding graph nodes.
+- **PriorityQueues**: Integral in implementing Dijkstra's algorithm efficiently, used for selecting the next closest node to visit.
+- **ArrayLists**: Utilized for dynamically storing lists of connected nodes in the graph structure.
+- **LinkedLists**: Employed in various parts of the application for efficient insertion and deletion operations, which are essential in graph traversal and pathfinding.
+
+### Algorithms
+The primary algorithm driving the application is Dijkstra's algorithm, renowned for its efficiency in finding the shortest path in a graph.
+
+- **Dijkstra's Algorithm**: Implemented to calculate the shortest distance between two countries, taking into account the undirected and weighted nature of the graph. The algorithm uses a combination of the data structures mentioned above, particularly HashMaps and PriorityQueues, to efficiently determine the shortest path from the start country to any other country. The result is a HashMap where nodes represent the countries, and the values are the shortest distances from the starting country to each respective country.
+
+This blend of data structures and algorithms ensures that the International Road Trip Planner not only provides accurate results but also does so with optimal efficiency and speed.
+
+
 ## Functions
 1. **Function One**:
 2. **Function Two**:
