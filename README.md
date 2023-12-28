@@ -33,7 +33,7 @@ $ java Source/Classes/IRoadTrip
 ## Usage
 The application can be used to plan road trips between countries by calculating the shortest path from one capital city to another.
 
-### Example Use
+### Example Use:
 
 #### Cross-continental route calculation
 ![multi-cont-1.png](./Images/multi-cont-1.png)
@@ -52,9 +52,6 @@ The application can be used to plan road trips between countries by calculating 
 ## Data Structures and Algorithms
 
 ### Data Structures
-The International Road Trip Planner utilizes a variety of data structures to efficiently handle
-and process the geographical and political data of various countries.
-
 - **Undirected Weighted Graph with an Adjacency List**: The core structure of the project. It represents the network of countries and their capital cities, with edges weighted by the distance between them.
 - **HashMaps**: Used for storing and quickly accessing the relationship between countries and their corresponding graph nodes.
 - **PriorityQueues**: Integral in implementing Dijkstra's algorithm efficiently, used for selecting the next closest node to visit.
@@ -62,8 +59,6 @@ and process the geographical and political data of various countries.
 - **LinkedLists**: Employed in various parts of the application for efficient insertion and deletion operations, which are essential in graph traversal and pathfinding.
 
 ### Algorithms
-The primary algorithm driving the application is Dijkstra's algorithm, renowned for its efficiency in finding the shortest path in a graph.
-
 - **Dijkstra's Algorithm**: Implemented to calculate the shortest distance between two countries, taking into account the undirected and weighted nature of the graph. The algorithm uses a combination of the data structures mentioned above, particularly HashMaps and PriorityQueues, to efficiently determine the shortest path from the start country to any other country. The result is a HashMap where nodes represent the countries, and the values are the shortest distances from the starting country to each respective country.
 
 This blend of data structures and algorithms ensures that the International Road Trip Planner not only provides accurate results but also does so with optimal efficiency and speed.
@@ -85,14 +80,28 @@ This blend of data structures and algorithms ensures that the International Road
 - `0` if the two country names are identical.
 
 ## Testing
-The project employs JUnit for testing. Here's an overview of how the testing works and instructions on
-how to run and modify the tests.
+The project employs JUnit for testing.
 
-### Running Tests
-- Instructions on how to execute the tests.
+1. Run tests using your IDE
+2. Example Test:
+```java
+public class Test {
+    @Test
+    public void testOne() {
+        int distance = roadTrip.getDistance("USA", "Mexico");
+        int expectedDistance = 3024;
+        Assert.assertEquals(expectedDistance, distance);
+    }
+}
+```
+3. Feel free to change or add any of the provided tests!
+4. Use the `Assert.assertEquals(Object obj1, Object obj2)` function to ensure that the calculated value is what you expect it to be.
 
 ## Limitations
 - The application has certain limitations in handling edge cases for specific country aliases and relationships.
+As a result certain edge cases have been hard-coded to account for inconsistencies in the data files and to provide
+a smooth user experience.
+- Only accounts for travel via shared land borders
 
 ## Contact
-For any queries or further information, feel free to [contact me via email](mailto:ccrawford6@dons.usfca.edu).
+For any queries or further information, feel free to contact [ccrawford6@dons.usfca.edu](mailto:ccrawford6@dons.usfca.edu).
