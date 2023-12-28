@@ -35,6 +35,19 @@ The application can be used to plan road trips between countries by calculating 
 
 ### Example Use
 
+#### Cross-continental route calculation
+![multi-cont-1.png](./Images/multi-cont-1.png)
+
+![mult-cont-2.png](Images%2Fmult-cont-2.png)
+
+#### (Most) Country Aliases Are Considered
+![alias.png](./Images/alias.png)
+
+#### Case-Insensitive Searching
+![case-insensitive.png](./Images/case-insensitive.png)
+
+#### Error Handling
+![invalid_route.png](./Images/invalid_route.png)
 
 ## Functions
 1. **Function One**:
