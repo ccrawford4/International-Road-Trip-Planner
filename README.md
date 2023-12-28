@@ -27,7 +27,7 @@ $ javac IRoadTrip
 ```
 4. To run the program use:
 ```bash
-java IRoadTrip
+$ java IRoadTrip
 ```
 
 ## Usage
